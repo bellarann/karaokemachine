@@ -6,5 +6,7 @@ radio.setGroup(8148)
 basic.forever(function () {
     if (input.lightLevel() > 50) {
         radio.sendNumber(0)
+    } else {
+        basic.clearScreen()
     }
 })
